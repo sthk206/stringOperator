@@ -1,4 +1,5 @@
 #include "functionOperator.hpp"
+#include <set>
 
 
 void functionOperator::zpad(){
@@ -26,4 +27,24 @@ void functionOperator::zpad(){
         }
         foutText << content << std::endl;
     }
+    finText.close();
+    foutText.close();
+}
+
+void functionOperator::asort(){
+    std::ifstream finText ("./data/" + this->input, std::ofstream::in);
+    std::ofstream foutText ("./data/" + this->output, std::ofstream::out);
+
+    std::string content = "";
+    std::multiset<std::string> sortedSet;
+    while(std::getline(finText,content)){
+        sortedSet.insert(content);
+    }
+    for(std::string i : sortedSet){
+        foutText << i << std::endl;
+    }
+
+    finText.close();
+    foutText.close();
+    
 }

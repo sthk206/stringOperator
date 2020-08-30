@@ -26,6 +26,9 @@ int main(int argc, char* argv[]) {
     case 1:
         op.zpad();
         break;
+    case 2:
+        op.asort();
+        break;
     
     default:
         break;

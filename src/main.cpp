@@ -29,6 +29,9 @@ int main(int argc, char* argv[]) {
     case 2:
         op.asort();
         break;
+    case 3:
+        op.wordAnalysis();
+        break;
     
     default:
         break;

@@ -6,6 +6,7 @@ class functionOperator{
         functionOperator(std::string in, std::string out):input(in), output(out){}
         void zpad();
         void asort();
+        void wordAnalysis();
 
     private:
         std::string input;

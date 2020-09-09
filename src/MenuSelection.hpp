@@ -6,8 +6,9 @@ class MainMenu : public Menu {
             mText = std::string() + "Menu\n"                         
                         + "Please select a string operation to perform.\n"       
                         + "1 - Zero Padding\n"                   
-                        + "2 - Alphabetical Sort\n"                      
-                        + "3 - Quit\n"                         
+                        + "2 - Alphabetical Sort\n"   
+                        + "3 - Word Count Analysis\n"                   
+                        + "4 - Quit\n"                         
                         + "Selection: ";                       
         }
 
